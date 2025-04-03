@@ -196,6 +196,13 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Shared\_LayoutHocVien.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\TinTuc.cshtml" />
+    <Content Include="Views\Home\TuyenDung.cshtml" />
+    <Content Include="Views\Home\ChiaSe.cshtml" />
+    <Content Include="Views\Home\LienHe.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,7 +215,6 @@
     <Folder Include="Views\HomeAdmin\" />
     <Folder Include="Views\HomeGiangVien\" />
     <Folder Include="Views\HomeHocVien\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
