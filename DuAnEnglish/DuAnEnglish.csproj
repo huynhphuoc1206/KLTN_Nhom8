@@ -112,12 +112,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DangNhapController.cs" />
     <Compile Include="Controllers\HomeAdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomeGiangVienController.cs" />
     <Compile Include="Controllers\HomeHocVienController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChatBotNoiDung.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DanhGia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -203,6 +207,7 @@
     <Content Include="Views\Home\TuyenDung.cshtml" />
     <Content Include="Views\Home\ChiaSe.cshtml" />
     <Content Include="Views\Home\LienHe.cshtml" />
+    <Content Include="Views\DangNhap\DangNhap.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

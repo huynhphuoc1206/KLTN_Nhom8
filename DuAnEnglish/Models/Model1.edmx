@@ -5,6 +5,15 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="trungtamtienganhModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ChatBotNoiDung">
+          <Key>
+            <PropertyRef Name="MaChat" />
+          </Key>
+          <Property Name="MaChat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CauHoiMau" Type="nvarchar(max)" />
+          <Property Name="TuKhoa" Type="nvarchar(max)" />
+          <Property Name="CauTraLoi" Type="nvarchar(max)" />
+        </EntityType>
         <EntityType Name="DanhGia">
           <Key>
             <PropertyRef Name="IDDanhGia" />
@@ -392,6 +401,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="trungtamtienganhModelStoreContainer">
+          <EntitySet Name="ChatBotNoiDung" EntityType="Self.ChatBotNoiDung" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DanhGia" EntityType="Self.DanhGia" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DiemSo" EntityType="Self.DiemSo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GiangVien" EntityType="Self.GiangVien" Schema="dbo" store:Type="Tables" />
@@ -486,6 +496,15 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="trungtamtienganhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ChatBotNoiDung">
+          <Key>
+            <PropertyRef Name="MaChat" />
+          </Key>
+          <Property Name="MaChat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CauHoiMau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TuKhoa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CauTraLoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="DanhGia">
           <Key>
             <PropertyRef Name="IDDanhGia" />
@@ -909,6 +928,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="trungtamtienganhEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ChatBotNoiDungs" EntityType="Self.ChatBotNoiDung" />
           <EntitySet Name="DanhGias" EntityType="Self.DanhGia" />
           <EntitySet Name="DiemSoes" EntityType="Self.DiemSo" />
           <EntitySet Name="GiangViens" EntityType="Self.GiangVien" />
@@ -1004,6 +1024,16 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="trungtamtienganhModelStoreContainer" CdmEntityContainer="trungtamtienganhEntities">
+          <EntitySetMapping Name="ChatBotNoiDungs">
+            <EntityTypeMapping TypeName="trungtamtienganhModel.ChatBotNoiDung">
+              <MappingFragment StoreEntitySet="ChatBotNoiDung">
+                <ScalarProperty Name="MaChat" ColumnName="MaChat" />
+                <ScalarProperty Name="CauHoiMau" ColumnName="CauHoiMau" />
+                <ScalarProperty Name="TuKhoa" ColumnName="TuKhoa" />
+                <ScalarProperty Name="CauTraLoi" ColumnName="CauTraLoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="DanhGias">
             <EntityTypeMapping TypeName="trungtamtienganhModel.DanhGia">
               <MappingFragment StoreEntitySet="DanhGia">
