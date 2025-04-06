@@ -108,6 +108,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\JSThongBao.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +211,10 @@
     <Content Include="Views\Home\LienHe.cshtml" />
     <Content Include="Views\DangNhap\DangNhap.cshtml" />
     <Content Include="Views\DangKy\DangKy.cshtml" />
+    <Content Include="Views\Shared\_LayoutGiangVien.cshtml" />
+    <Content Include="Views\HomeAdmin\Index.cshtml" />
+    <Content Include="Views\HomeGiangVien\Index.cshtml" />
+    <Content Include="Views\HomeHocVien\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,10 +224,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Components\" />
-    <Folder Include="Views\HomeAdmin\" />
-    <Folder Include="Views\HomeGiangVien\" />
-    <Folder Include="Views\HomeHocVien\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

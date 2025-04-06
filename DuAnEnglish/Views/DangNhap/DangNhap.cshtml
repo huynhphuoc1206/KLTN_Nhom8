@@ -117,36 +117,6 @@
 <body>
 
     <div class="login-container">
-        @if (ViewBag.ThongBao != null)
-        {
-    <script>
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Lỗi!',
-                    text: '@Html.Raw(ViewBag.ThongBao)',
-                    background: '#ecf0f1',
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'OK',
-                    showCancelButton: false,
-                    timer: 5000,
-                    customClass: {
-                        popup: 'swal2-popup',
-                        title: 'swal2-title',
-                        content: 'swal2-content',
-                        confirmButton: 'swal2-confirm',
-                        cancelButton: 'swal2-cancel'
-                    },
-                    didOpen: () => {
-                        document.body.style.overflow = 'hidden'; // Ngăn cuộn khi popup mở
-                    },
-                    willClose: () => {
-                        document.body.style.overflow = ''; // Khôi phục cuộn khi popup đóng
-                    }
-                });
-    </script>
-        }
-        
         @using (Html.BeginForm("DangNhap", "DangNhap", FormMethod.Post))
         {
             <label>Tên đăng nhập</label>
@@ -165,11 +135,18 @@
             <button type="submit">Đăng Ký</button>
         </form>
         <br />
-        <!--Nút trở về Home -->   
+        <!--Nút trở về Home -->
         <form action="@Url.Action("Index", "Home")" method="get">
             <button type="submit">Quay về Trang Chủ</button>
         </form>
     </div>
-
+    <script src="~/Scripts/JSThongBao.js"></script>
+    @if (ViewBag.ThongBao != null)
+    {
+        <script>
+            // Gọi hàm showAlert từ file JSThongBao.js
+            showAlert('@Html.Raw(ViewBag.ThongBao)');
+        </script>
+    }
 </body>
 </html>

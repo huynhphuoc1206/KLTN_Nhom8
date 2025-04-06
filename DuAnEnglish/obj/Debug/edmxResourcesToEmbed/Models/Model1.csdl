@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="trungtamtienganhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ChatBotNoiDung">
+    <Key>
+      <PropertyRef Name="MaChat" />
+    </Key>
+    <Property Name="MaChat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CauHoiMau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TuKhoa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CauTraLoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
   <EntityType Name="DanhGia">
     <Key>
       <PropertyRef Name="IDDanhGia" />
@@ -423,6 +432,7 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="trungtamtienganhEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ChatBotNoiDungs" EntityType="Self.ChatBotNoiDung" />
     <EntitySet Name="DanhGias" EntityType="Self.DanhGia" />
     <EntitySet Name="DiemSoes" EntityType="Self.DiemSo" />
     <EntitySet Name="GiangViens" EntityType="Self.GiangVien" />

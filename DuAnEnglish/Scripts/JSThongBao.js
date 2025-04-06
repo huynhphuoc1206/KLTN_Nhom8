@@ -1,8 +1,8 @@
-// Hàm hi?n th? thông báo SweetAlert2
+ï»¿// HÃ m hien thi thÃ´ng bÃ¡o SweetAlert2
 function showAlert(message) {
     Swal.fire({
         icon: 'error',
-        title: 'L?i!',
+        title: 'Lá»—i!',
         text: message,
         background: '#ecf0f1',
         confirmButtonColor: '#3085d6',
@@ -21,7 +21,7 @@ function showAlert(message) {
             document.body.style.overflow = 'hidden'; // Ng?n cu?n khi popup m?
         },
         willClose: () => {
-            document.body.style.overflow = ''; // Khôi ph?c cu?n khi popup ?óng
+            document.body.style.overflow = ''; // KhÃ´i ph?c cu?n khi popup ?Ã³ng
         }
     });
 }
