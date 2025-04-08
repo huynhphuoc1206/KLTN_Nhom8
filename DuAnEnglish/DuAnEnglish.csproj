@@ -98,6 +98,10 @@
   <ItemGroup>
     <Content Include="Content\_Layout.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\TI_CoBan.jpg" />
+    <Content Include="Images\TI_LuyenDe.jpg" />
+    <Content Include="Images\TI_Master.jpg" />
+    <Content Include="Images\TI_TrungCap.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -119,6 +123,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomeGiangVienController.cs" />
     <Compile Include="Controllers\HomeHocVienController.cs" />
+    <Compile Include="Controllers\KhoaHocController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +220,9 @@
     <Content Include="Views\HomeAdmin\Index.cshtml" />
     <Content Include="Views\HomeGiangVien\Index.cshtml" />
     <Content Include="Views\HomeHocVien\Index.cshtml" />
+    <Content Include="Views\KhoaHoc\KhoaHoc.cshtml" />
+    <Content Include="Views\KhoaHoc\ChiTietKhoaHoc.cshtml" />
+    <Content Include="Views\KhoaHoc\DangKyKhoaHoc.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -224,7 +232,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

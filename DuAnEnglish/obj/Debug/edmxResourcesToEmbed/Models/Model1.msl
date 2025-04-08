@@ -40,6 +40,10 @@
         <MappingFragment StoreEntitySet="GiangVien">
           <ScalarProperty Name="IDGiangVien" ColumnName="IDGiangVien" />
           <ScalarProperty Name="IDTenDangNhap" ColumnName="IDTenDangNhap" />
+          <ScalarProperty Name="TenGV" ColumnName="TenGV" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
           <ScalarProperty Name="ChuyenMon" ColumnName="ChuyenMon" />
           <ScalarProperty Name="BangCap" ColumnName="BangCap" />
         </MappingFragment>
@@ -64,6 +68,7 @@
         <MappingFragment StoreEntitySet="HocVien">
           <ScalarProperty Name="IDHocVien" ColumnName="IDHocVien" />
           <ScalarProperty Name="IDTenDangNhap" ColumnName="IDTenDangNhap" />
+          <ScalarProperty Name="TenHV" ColumnName="TenHV" />
           <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
           <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
           <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
@@ -85,6 +90,7 @@
         <MappingFragment StoreEntitySet="KhoaHoc">
           <ScalarProperty Name="IDKhoaHoc" ColumnName="IDKhoaHoc" />
           <ScalarProperty Name="TenKhoaHoc" ColumnName="TenKhoaHoc" />
+          <ScalarProperty Name="DanhMuc" ColumnName="DanhMuc" />
           <ScalarProperty Name="MoTa" ColumnName="MoTa" />
           <ScalarProperty Name="HocPhi" ColumnName="HocPhi" />
           <ScalarProperty Name="HinhAnhKH" ColumnName="HinhAnhKH" />

@@ -38,6 +38,10 @@
     </Key>
     <Property Name="IDGiangVien" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IDTenDangNhap" Type="varchar" MaxLength="50" />
+    <Property Name="TenGV" Type="nvarchar" MaxLength="100" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="255" />
     <Property Name="ChuyenMon" Type="nvarchar(max)" />
     <Property Name="BangCap" Type="nvarchar(max)" />
   </EntityType>
@@ -60,9 +64,10 @@
     </Key>
     <Property Name="IDHocVien" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IDTenDangNhap" Type="varchar" MaxLength="50" />
+    <Property Name="TenHV" Type="nvarchar" MaxLength="100" />
     <Property Name="NgaySinh" Type="date" />
     <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
-    <Property Name="DiaChi" Type="nvarchar(max)" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="HocVienLopHoc">
     <Key>
@@ -80,6 +85,7 @@
     </Key>
     <Property Name="IDKhoaHoc" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="TenKhoaHoc" Type="nvarchar" MaxLength="255" />
+    <Property Name="DanhMuc" Type="nvarchar" MaxLength="50" />
     <Property Name="MoTa" Type="nvarchar(max)" />
     <Property Name="HocPhi" Type="decimal" Precision="18" Scale="0" />
     <Property Name="HinhAnhKH" Type="nvarchar" MaxLength="50" />
