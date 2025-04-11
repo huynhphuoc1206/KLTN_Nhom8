@@ -1,5 +1,14 @@
 ﻿@model DuAnEnglish.Models.KhoaHoc
-
+@{
+    if (Session["Role"] != null && Session["Role"].ToString() == "hocvien") // Sửa điều kiện phù hợp với kiểu dữ liệu
+    {
+        Layout = "~/Views/Shared/_LayoutHocVien.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 @{
     ViewBag.Title = "Chi tiết khóa học";
 }
@@ -18,8 +27,9 @@
         <p><strong>ID Khóa Học:</strong> @Model.IDKhoaHoc</p>
         <p><strong>Mô Tả:</strong> @Model.MoTa</p>
         <p><strong>Học Phí:</strong> @String.Format("{0:N0} VNĐ", Model.HocPhi)</p>
-        <p><strong>Số Lượng Chỗ Còn Lại:</strong> @Model.Slot</p>
         <br />
-        <a href="@Url.Action("DangKy", "KhoaHoc", new { id = Model.IDKhoaHoc })">Đăng ký khóa học</a>
+        <a href="@Url.Action("DanhSachLopHoc", "LopHoc", new { id = Model.IDKhoaHoc })" class="btn btn-success">Xem lớp học</a>
     </div>
 </div>
+
+<!--<hr />-->

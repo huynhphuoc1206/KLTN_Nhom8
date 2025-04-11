@@ -45,5 +45,12 @@ namespace DuAnEnglish.Controllers
             // Trả thông tin khóa học cho view
             return View(khoaHoc);
         }
+
+        // GET: /KhoaHoc/DangKy
+        public ActionResult DangKyKhoaHoc()
+        {
+            return View();
+            
+        }
     }
 }

@@ -4,4 +4,12 @@
 }
 
 <h2>DangKyKhoaHoc</h2>
+<script src="~/Scripts/JSThongBao.js"></script>
+@if (ViewBag.ThongBao != null)
+{
+    <script>
+            // Gọi hàm showAlert từ file JSThongBao.js
+            showAlert('@Html.Raw(ViewBag.ThongBao)');
+    </script>
+}
 
