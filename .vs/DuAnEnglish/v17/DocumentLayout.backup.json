@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KLTN_Nhom8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F555F6E9-71F9-4CB3-A693-966860C4F46D}|DuAnEnglish\\DuAnEnglish.csproj|d:\\kltn_nhom8\\duanenglish\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F555F6E9-71F9-4CB3-A693-966860C4F46D}|DuAnEnglish\\DuAnEnglish.csproj|solutionrelative:duanenglish\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\KLTN_Nhom8\\DuAnEnglish\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "DuAnEnglish\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\KLTN_Nhom8\\DuAnEnglish\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "DuAnEnglish\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T05:14:40.694Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
