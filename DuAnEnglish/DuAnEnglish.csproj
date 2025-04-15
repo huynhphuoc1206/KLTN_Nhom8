@@ -133,7 +133,10 @@
     <Compile Include="Models\DanhGia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DiemSo.cs">
+    <Compile Include="Models\DiemIELT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DiemTOEIC.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\GiangVien.cs">
@@ -149,9 +152,6 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KhoaHoc.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LichHoc.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\LoaiTaiKhoan.cs">
@@ -176,9 +176,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\PhongHoc.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TaiKhoan.cs">
@@ -223,6 +220,7 @@
     <Content Include="Views\KhoaHoc\KhoaHoc.cshtml" />
     <Content Include="Views\KhoaHoc\ChiTietKhoaHoc.cshtml" />
     <Content Include="Views\KhoaHoc\DangKyKhoaHoc.cshtml" />
+    <Content Include="Views\Home\SuKien.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

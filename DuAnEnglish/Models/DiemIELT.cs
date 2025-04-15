@@ -12,12 +12,16 @@ namespace DuAnEnglish.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class sysdiagram
+    public partial class DiemIELT
     {
-        public string name { get; set; }
-        public int principal_id { get; set; }
-        public int diagram_id { get; set; }
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public int IDHocVien { get; set; }
+        public string IDLopHoc { get; set; }
+        public Nullable<decimal> DiemNghe { get; set; }
+        public Nullable<decimal> DiemNoi { get; set; }
+        public Nullable<decimal> DiemDoc { get; set; }
+        public Nullable<decimal> DiemViet { get; set; }
+        public Nullable<decimal> TongDiem { get; set; }
+    
+        public virtual HocVienLopHoc HocVienLopHoc { get; set; }
     }
 }
