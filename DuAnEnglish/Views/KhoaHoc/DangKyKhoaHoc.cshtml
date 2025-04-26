@@ -1,9 +1,64 @@
-﻿
-@{
-    ViewBag.Title = "DangKyKhoaHoc";
-}
+﻿@model DuAnEnglish.Models.ThanhToan
 
-<h2>DangKyKhoaHoc</h2>
+@{
+    Layout = "~/Views/Shared/_LayoutHocVien.cshtml";
+}
+<!-- SweetAlert2 -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<h2>Thông tin đăng ký lớp học</h2>
+
+@using (Html.BeginForm("DangKyKhoaHoc", "KhoaHoc", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            <label>ID Lớp:</label>
+            <p>@Model.IDLopHoc</p>
+            @Html.HiddenFor(m => m.IDLopHoc)
+        </div>
+
+        <div class="form-group">
+            <label>ID Khóa học:</label>
+            <p>@Model.IDKhoaHoc</p>
+            @Html.HiddenFor(m => m.IDKhoaHoc)
+        </div>
+
+        <div class="form-group">
+            <label>Tên lớp:</label>
+            <p>@Model.LopHoc.TenLop</p>
+        </div>
+
+        <div class="form-group">
+            <label>Lịch học:</label>
+            <p>@Model.LopHoc.ThuTrongTuan</p>
+        </div>
+
+        <div class="form-group">
+            <label>Giờ học:</label>
+            <p>
+                @(Model.LopHoc.GioHocBD.HasValue ? Model.LopHoc.GioHocBD.Value.ToString(@"hh\:mm") : "N/A")
+                -
+                @(Model.LopHoc.GioHocKT.HasValue ? Model.LopHoc.GioHocKT.Value.ToString(@"hh\:mm") : "N/A")
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label>Giá:</label>
+            <p>@String.Format("{0:N0} VNĐ", Model.KhoaHoc.HocPhi ?? 0m)</p>
+        </div>
+
+        <div class="form-group">
+            <label>Tên học viên:</label>
+            <p>@ViewBag.TenHocVien</p>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Đăng ký</button>
+        </div>
+    </div>
+}
 <script src="~/Scripts/JSThongBao.js"></script>
 @if (ViewBag.ThongBao != null)
 {
@@ -12,4 +67,3 @@
             showAlert('@Html.Raw(ViewBag.ThongBao)');
     </script>
 }
-
