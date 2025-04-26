@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DuAnEnglish.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,16 @@ namespace DuAnEnglish.Controllers
 {
     public class HomeController : Controller
     {
+        // Khởi tạo DbContext
+        private trungtamtienganhEntities db = new trungtamtienganhEntities();
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            // Lấy toàn bộ danh sách khóa học từ cơ sở dữ liệu
+            var dsKhoaHoc = db.KhoaHocs.ToList();
+
+            // Truyền danh sách khóa học vào view
+            return View(dsKhoaHoc);
         }
         public ActionResult KhoaHoc()
         {
