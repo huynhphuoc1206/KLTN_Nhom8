@@ -9,7 +9,7 @@ namespace DuAnEnglish.Controllers
 {
     public class HomeController : Controller
     {
-        // Khởi tạo DbContext
+        // Khởi tạo DbContext 
         private trungtamtienganhEntities db = new trungtamtienganhEntities();
         // GET: Home
         public ActionResult Index()
