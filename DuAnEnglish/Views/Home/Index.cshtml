@@ -6,6 +6,9 @@
     <title>Trung Tâm Anh Ngữ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
         /* Custom animations */
         @@keyframes fadeInUp {
@@ -61,15 +64,21 @@
     </section>
 
     <!-- About Section with red icons -->
-    <section class="container mx-auto py-20 px-4">
+    <section class="container mx-auto py-20 px-4"
+             data-aos="fade-up"
+             data-aos-duration="800">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-6">Về Chúng Tôi</h2>
             <p class="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-                Trung tâm Anh ngữ với hơn 15 năm kinh nghiệm trong lĩnh vực đào tạo tiếng Anh, cam kết mang đến chất lượng giáo dục tốt nhất cho học viên.
+                Trung tâm Anh ngữ với hơn 15 năm kinh nghiệm trong lĩnh vực đào tạo tiếng Anh,
+                cam kết mang đến chất lượng giáo dục tốt nhất cho học viên.
             </p>
         </div>
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+            <!-- Card Sứ Mệnh -->
+            <div class="bg-white p-8 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
                 <div class="text-[#ce3235] text-4xl mb-4">
                     <i class="fas fa-bullseye"></i>
                 </div>
@@ -78,7 +87,11 @@
                     Trang bị cho thế hệ trẻ vốn tiếng Anh vững chắc trên bước đường hội nhập thế giới.
                 </p>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+
+            <!-- Card Tầm Nhìn -->
+            <div class="bg-white p-8 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
                 <div class="text-[#ce3235] text-4xl mb-4">
                     <i class="fas fa-binoculars"></i>
                 </div>
@@ -90,6 +103,7 @@
         </div>
     </section>
 
+
     <!-- Courses Section with red icons -->
     <section class="bg-gradient-to-b from-gray-50 to-white py-20">
         <div class="container mx-auto px-4">
@@ -99,9 +113,9 @@
                     Các chương trình đào tạo được thiết kế bài bản theo chuẩn quốc tế
                 </p>
             </div>
-            <div class="grid md:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 <!-- Course Card 1 -->
-                <div class="bg-white p-8 rounded-xl shadow-md card-hover text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 text-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-[#ce3235] text-5xl mb-6">
                         <i class="fas fa-baby"></i>
                     </div>
@@ -113,7 +127,7 @@
                     </p>
                 </div>
                 <!-- Course Card 2 -->
-                <div class="bg-white p-8 rounded-xl shadow-md card-hover text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="text-[#ce3235] text-5xl mb-6">
                         <i class="fas fa-baby"></i>
                     </div>
@@ -124,7 +138,7 @@
                     </p>
                 </div>
                 <!-- Course Card 3 -->
-                <div class="bg-white p-8 rounded-xl shadow-md card-hover text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 text-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="text-[#ce3235] text-5xl mb-6">
                         <i class="fas fa-baby"></i>
                     </div>
@@ -135,7 +149,7 @@
                     </p>
                 </div>
                 <!-- Course Card 4 -->
-                <div class="bg-white p-8 rounded-xl shadow-md card-hover text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 text-center" data-aos="fade-up" data-aos-delay="400">
                     <div class="text-[#ce3235] text-5xl mb-6">
                         <i class="fas fa-baby"></i>
                     </div>
@@ -154,8 +168,12 @@
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-6">Học Viên Nói Gì Về Chúng Tôi</h2>
         </div>
+
         <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div class="bg-white p-8 rounded-xl shadow-md relative">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-md relative transform transition-all duration-300"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
                 <div class="testimonial-quote"></div>
                 <p class="text-gray-600 italic mb-6 leading-relaxed">
                     "Khóa học rất bổ ích, giúp em tự tin hơn trong giao tiếp tiếng Anh."
@@ -170,23 +188,28 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-md relative">
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-md relative transform transition-all duration-300"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
                 <div class="testimonial-quote"></div>
                 <p class="text-gray-600 italic mb-6 leading-relaxed">
-                    "Khóa học rất bổ ích, giúp em tự tin hơn trong giao tiếp tiếng Anh."
+                    "Giáo viên nhiệt tình, bài giảng dễ hiểu và thực hành nhiều."
                 </p>
                 <div class="flex items-center">
                     <div class="w-12 h-12 rounded-full bg-[#ce3235] flex items-center justify-center text-white mr-4">
                         <i class="fas fa-user"></i>
                     </div>
                     <div>
-                        <p class="font-bold">Nguyễn Văn A</p>
-                        <p class="text-sm text-gray-500">Học viên IELTS</p>
+                        <p class="font-bold">Trần Thị B</p>
+                        <p class="text-sm text-gray-500">Học viên TOEIC</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Footer with updated contact info and original social media logos -->
     <footer class="bg-[#ce3235] text-white py-12">
@@ -225,7 +248,7 @@
                     </ul>
                 </div>
 
-                <!-- Social Media: giữ nguyên màu gốc của logo, ngoại trừ YouTube -->
+                <!-- Social Media -->
                 <div class="mb-8">
                     <h3 class="text-white text-xl font-bold mb-6">Kết Nối Với Chúng Tôi</h3>
                     <div class="flex space-x-4">
@@ -243,6 +266,13 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,    // thời gian (ms)
+            once: true        // chỉ chạy 1 lần
+        });
+    </script>
 
 </body>
 </html>
