@@ -98,10 +98,19 @@
   <ItemGroup>
     <Content Include="Content\_Layout.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\agenda.png" />
+    <Content Include="Images\documentation.png" />
+    <Content Include="Images\growth.png" />
+    <Content Include="Images\logout.png" />
+    <Content Include="Images\people.png" />
+    <Content Include="Images\person.png" />
+    <Content Include="Images\robot.png" />
+    <Content Include="Images\teacher.png" />
     <Content Include="Images\TI_CoBan.jpg" />
     <Content Include="Images\TI_LuyenDe.jpg" />
     <Content Include="Images\TI_Master.jpg" />
     <Content Include="Images\TI_TrungCap.jpg" />
+    <Content Include="Images\user %285%29.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
