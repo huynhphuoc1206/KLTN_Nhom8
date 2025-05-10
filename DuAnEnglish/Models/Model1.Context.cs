@@ -37,7 +37,6 @@ namespace DuAnEnglish.Models
         public virtual DbSet<LoaiTaiKhoan> LoaiTaiKhoans { get; set; }
         public virtual DbSet<LopHoc> LopHocs { get; set; }
         public virtual DbSet<PhongHoc> PhongHocs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
         public virtual DbSet<TaiLieu> TaiLieux { get; set; }
         public virtual DbSet<ThanhToan> ThanhToans { get; set; }

@@ -98,7 +98,16 @@
   <ItemGroup>
     <Content Include="Content\_Layout.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\6675327.jpg" />
     <Content Include="Images\contact_img.png" />
+    <Content Include="Images\giangvien1.jpg" />
+    <Content Include="Images\giangvien3.jpg" />
+    <Content Include="Images\giangvien4.jpg" />
+    <Content Include="Images\giangvien5.jpg" />
+    <Content Include="Images\giangvien6.jpg" />
+    <Content Include="Images\giangvien7.jpg" />
+    <Content Include="Images\giangvien8.jpg" />
+    <Content Include="Images\group-kids-studying-school.jpg" />
     <Content Include="Images\TI_CoBan.jpg" />
     <Content Include="Images\TI_LuyenDe.jpg" />
     <Content Include="Images\TI_Master.jpg" />
@@ -180,9 +189,6 @@
     <Compile Include="Models\PhongHoc.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\TaiKhoan.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -199,6 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Images\giangvien2.webp" />
     <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>

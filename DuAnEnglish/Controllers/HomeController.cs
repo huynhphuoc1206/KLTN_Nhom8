@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DuAnEnglish.Models;
 
 namespace DuAnEnglish.Controllers
 {
     public class HomeController : Controller
     {
+        private trungtamtienganhEntities db = new trungtamtienganhEntities();
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            // Lấy toàn bộ danh sách khóa học từ cơ sở dữ liệu
+            var dsKhoaHoc = db.KhoaHocs.ToList();
+
+            // Truyền danh sách khóa học vào view
+            return View(dsKhoaHoc);
         }
         public ActionResult KhoaHoc()
         {

@@ -40,34 +40,35 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         @foreach (var item in Model)
         {
-<div class="group relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-    <a href="@Url.Action("ChiTietKhoaHoc", "KhoaHoc", new { id = item.IDKhoaHoc })"
-       class="block overflow-hidden rounded-t-xl">
-        <img src="~/Images/@item.HinhAnhKH"
-             alt="@item.TenKhoaHoc"
-             class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-    </a>
+            <div class="group relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="@Url.Action("ChiTietKhoaHoc", "KhoaHoc", new { id = item.IDKhoaHoc })"
+                   class="block overflow-hidden rounded-t-xl">
+                    <img src="~/Images/@item.HinhAnhKH"
+                         alt="@item.TenKhoaHoc"
+                         class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                </a>
 
-    <div class="p-6">
-        <h3 class="text-xl font-bold text-gray-800 mb-2">@item.TenKhoaHoc</h3>
-        <p class="text-gray-600 mb-4 line-clamp-3">
-            Khóa học được thiết kế với nội dung cập nhật, phù hợp với nhu cầu đào tạo tiếng Anh hiện đại.
-        </p>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">@item.TenKhoaHoc</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        Khóa học được thiết kế với nội dung cập nhật, phù hợp với nhu cầu đào tạo tiếng Anh hiện đại.
+                    </p>
 
-        <div class="flex items-center justify-between">
-            <a href="@Url.Action("ChiTietKhoaHoc", "KhoaHoc", new { id = item.IDKhoaHoc })"
-               class="flex items-center text-red-600 font-semibold hover:text-red-800 transition-colors">
-                Xem chi tiết
-                <i class="fas fa-chevron-right ml-2 text-sm"></i>
-            </a>
-        </div>
-    </div>
+                    <div class="flex items-center justify-between">
+                        <a href="@Url.Action("ChiTietKhoaHoc", "KhoaHoc", new { id = item.IDKhoaHoc })"
+                           class="flex items-center text-[#00aab5] font-semibold hover:text-[#008996] transition-colors">
+                            Xem chi tiết
+                            <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Ribbon badge -->
-    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
-        Hot
-    </div>
-</div>}
+                <!-- Ribbon badge -->
+                <div class="absolute top-4 right-4 bg-[#fcaf17] text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
+                    Hot
+                </div>
+            </div>
+        }
     </div>
 </div>
 
@@ -305,6 +306,22 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+        <!-- Nút gọi điện -->
+        <a href="tel:0123456789" class="w-[80px] h-[80px] rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:bg-green-600 transition-all">
+            <i class="fas fa-phone text-white text-3xl"></i>
+        </a>
+
+        <!-- Nút Zalo -->
+        <a href="https://zalo.me/0123456789" target="_blank" class="w-[80px] h-[80px] rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:bg-blue-700 transition-all">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/1200px-Icon_of_Zalo.svg.png" alt="Zalo" class="w-10 h-10">
+        </a>
+
+        <!-- Nút Messenger -->
+        <a href="https://m.me/your-page" target="_blank" class="w-[80px] h-[80px] rounded-full bg-blue-500 flex items-center justify-center shadow-lg hover:bg-blue-600 transition-all">
+            <i class="fab fa-facebook-messenger text-white text-3xl"></i>
+        </a>
     </div>
 </div>
 

@@ -10,6 +10,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet"
           href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
@@ -60,10 +61,59 @@
         @RenderBody()
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-[#ce3235] border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 py-4 text-center text-sm text-white">
-            &copy; @DateTime.Now.Year - NHÓM 8 - DTU
+    <!-- Footer with updated contact info and original social media logos -->
+    <footer class="bg-[#ce3235] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class=" md:grid-cols-3 flex justify-between ">
+                <!-- Contact Info -->
+                <div class="mb-8">
+                    <h3 class="text-white text-xl font-bold mb-6">Trung Tâm Anh Ngữ</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-white"></i>
+                            123 Đường Trần Hưng Đạo, TX.Điện Bàn, Tỉnh Quảng Nam
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-white"></i>
+                            0123 456 789
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-white"></i>
+                            lienhe@trungtamanhngufivestars.vn
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="mb-8">
+                    <h3 class="text-white text-xl font-bold mb-6">Liên Kết Nhanh</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="hover:text-red-200 transition-colors">
+                                <i class="fas fa-chevron-right mr-2 text-sm"></i>
+                                Trang Chủ
+                            </a>
+                        </li>
+                        <!-- Add other links similarly -->
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="mb-8">
+                    <h3 class="text-white text-xl font-bold mb-6">Kết Nối Với Chúng Tôi</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-red-800 flex items-center justify-center text-white hover:bg-red-900 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-pink-600 flex items-center justify-center text-white hover:bg-pink-700 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
